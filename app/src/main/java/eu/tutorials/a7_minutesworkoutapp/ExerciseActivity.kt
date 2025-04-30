@@ -104,8 +104,7 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
          * of audio/video files and streams.
          */
         try {
-            val soundURI =
-                Uri.parse("android.resource://eu.tutorials.a7_minutesworkoutapp/" + R.raw.press_start)
+            val soundURI = Uri.parse("android.resource://eu.tutorials.workoutapp/" + R.raw.press_start)
             player = MediaPlayer.create(applicationContext, soundURI)
             player?.isLooping = false // Sets the player to be looping or non-looping.
             player?.start() // Starts Playback.

@@ -7,7 +7,8 @@ import androidx.room.PrimaryKey
  * Create an entity with @param [tableName]
  * Use @param [date] as primary key
  * */
-@Entity(tableName = "history-table")
+@Entity(tableName = "history_table")
 data class HistoryEntity(
     @PrimaryKey
-    val date:String)
+    val date: String
+)
